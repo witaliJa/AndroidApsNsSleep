@@ -4,6 +4,9 @@ This Fork handle a battery drain Problem.
 <br/>Nightscout get paused (after 30 seconds) and unpaused (after 120 seconds).
 <br/>This reduce in my case battery usage from 10% per hour to 4% per hour.
 <br/>And now my battery last 25 hours (without this patch only 10 hours).
+<br/>The parameter 30seconds and 120seconds can be configured in setting/nightscout/alarm:
+<br/>- "CUSTOM: Nightscout pause time in sec"
+<br/>- "CUSTOM: Nightscout active time in sec"
 <br/><b>U can use this patch, but on your own risk.</b>
 <br/><br/><br/>
 
