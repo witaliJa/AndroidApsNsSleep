@@ -305,6 +305,8 @@ L\'ENSEMBLE DES RISQUES LIÉS À LA QUALITÉ ET À LA PERFORMANCE DU PROGRAMME S
     <string name="restart">Redémarrer</string>
     <string name="nsclientinternal_title">NSClient</string>
     <string name="nsclientinternal_url_title">URL Nightscout</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">Entrez l’URL de votre site Nightscout</string>
     <string name="nsclientinternal_secret_title">NS API Secret</string>
     <string name="nsclientinternal_secret_dialogtitle">NS API Secret</string>

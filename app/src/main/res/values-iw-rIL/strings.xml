@@ -304,6 +304,8 @@
     <string name="restart">הפעל מחדש</string>
     <string name="nsclientinternal_title">NSClient</string>
     <string name="nsclientinternal_url_title">כתובת Nightscout</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">הזינו את כתובת ה-Nightscout שלכם</string>
     <string name="nsclientinternal_secret_title">קוד API של Nightscout</string>
     <string name="nsclientinternal_secret_dialogtitle">קוד API של Nightscout</string>

@@ -303,6 +303,8 @@
     <string name="restart">重新启动</string>
     <string name="nsclientinternal_title">NSClient</string>
     <string name="nsclientinternal_url_title">Nightscout URL(网址)</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">输入您的 Nightscout URL(网址)</string>
     <string name="nsclientinternal_secret_title">NS API 密钥</string>
     <string name="nsclientinternal_secret_dialogtitle">NS API 密钥</string>

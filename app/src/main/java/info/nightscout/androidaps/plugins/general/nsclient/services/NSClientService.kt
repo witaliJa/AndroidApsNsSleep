@@ -47,6 +47,7 @@ import info.nightscout.androidaps.utils.DateUtil
 import info.nightscout.androidaps.utils.FabricPrivacy
 import info.nightscout.androidaps.utils.JsonHelper.safeGetString
 import info.nightscout.androidaps.utils.JsonHelper.safeGetStringAllowNull
+import info.nightscout.androidaps.utils.T
 import info.nightscout.androidaps.utils.T.Companion.mins
 import info.nightscout.androidaps.utils.rx.AapsSchedulers
 import info.nightscout.shared.logging.AAPSLogger
@@ -263,6 +264,7 @@ class NSClientService : DaggerService() {
                     socket.on("urgent_alarm", onUrgentAlarm)
                     socket.on("clear_alarm", onClearAlarm)
                 }
+                initNsSleepToggle()
             } catch (e: URISyntaxException) {
                 rxBus.send(EventNSClientNewLog("NSCLIENT", "Wrong URL syntax"))
                 rxBus.send(EventNSClientStatus("Wrong URL syntax"))
@@ -278,6 +280,38 @@ class NSClientService : DaggerService() {
             rxBus.send(EventNSClientStatus("Not configured"))
         }
     }
+
+    var nsSleepToggleInitialized = false
+    private fun initNsSleepToggle() {
+        if (!nsSleepToggleInitialized) {
+            rxBus.send(EventNSClientNewLog("NSCLIENT", "CUSTOM: initNsSleepToggle"))
+            setNewNsStateInMins()
+            nsSleepToggleInitialized = true
+        }
+    }
+    private fun setNewNsStateInMins() {
+        if (nsClientPlugin.isAllowed && nsEnabled) {
+            rxBus.send(EventNSClientNewLog("NSCLIENT", "CUSTOM: changing NS state:" + nsClientPlugin.paused))
+            nsClientPlugin.pause(!nsClientPlugin.paused)
+        } else {
+            rxBus.send(EventNSClientNewLog("NSCLIENT", "CUSTOM: noChange-Waiting:" + nsClientPlugin.paused))
+        }
+        Thread {
+            val delayWaitSec = sp.getInt(R.string.key_nsclientinternal_toggle_time, 2*60)
+            val activeSec = sp.getInt(R.string.key_nsclientinternal_toggle_active_time, 30)
+            if (nsClientPlugin.paused) {
+                rxBus.send(EventNSClientNewLog("NSCLIENT", "CUSTOM: paused for:" + delayWaitSec))
+                SystemClock.sleep(T.secs(delayWaitSec.toLong()).msecs())
+            } else {
+                rxBus.send(EventNSClientNewLog("NSCLIENT", "CUSTOM: unpaused for:" + activeSec))
+                SystemClock.sleep(T.secs(activeSec.toLong()).msecs())
+            }
+            setNewNsStateInMins()
+        }.start()
+
+    }
+
+
 
     private val onConnect = Emitter.Listener {
         connectCounter++

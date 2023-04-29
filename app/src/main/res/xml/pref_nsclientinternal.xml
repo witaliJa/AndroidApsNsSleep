@@ -123,6 +123,34 @@
                 validate:testType="numericRange" />
 
             <info.nightscout.androidaps.utils.textValidator.ValidatingEditTextPreference
+                android:defaultValue="120"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:key="@string/key_nsclientinternal_toggle_time"
+                android:maxLines="20"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/nsclientinternal_toggle_time"
+                validate:maxNumber="999999"
+                validate:minNumber="1"
+                validate:testType="numericRange" />
+
+
+            <info.nightscout.androidaps.utils.textValidator.ValidatingEditTextPreference
+                android:defaultValue="30"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:key="@string/key_nsclientinternal_toggle_active_time"
+                android:maxLines="20"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/nsclientinternal_toggle_active_time"
+                validate:maxNumber="240"
+                validate:minNumber="1"
+                validate:testType="numericRange" />
+
+
+            <info.nightscout.androidaps.utils.textValidator.ValidatingEditTextPreference
                 android:defaultValue="31"
                 android:digits="0123456789"
                 android:inputType="number"

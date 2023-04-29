@@ -304,6 +304,8 @@
     <string name="restart">Restart</string>
     <string name="nsclientinternal_title">NSClient</string>
     <string name="nsclientinternal_url_title">Adresa Nightscoutu</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">Vložte adresu Nightscoutu</string>
     <string name="nsclientinternal_secret_title">NS heslo (API secret)</string>
     <string name="nsclientinternal_secret_dialogtitle">NS heslo</string>

@@ -304,6 +304,8 @@
     <string name="restart">Neustart</string>
     <string name="nsclientinternal_title">Nightscout-Client</string>
     <string name="nsclientinternal_url_title">Nightscout-URL</string>
+    <string name="nsclientinternal_toggle_time">Toggle Pause in sec (WITI)</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">Nightscout-URL eingeben</string>
     <string name="nsclientinternal_secret_title">Nightscout API-Key</string>
     <string name="nsclientinternal_secret_dialogtitle">Nightscout API-Key</string>

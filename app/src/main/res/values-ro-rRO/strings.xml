@@ -300,6 +300,8 @@
     <string name="restart">Restartare</string>
     <string name="nsclientinternal_title">Client NS</string>
     <string name="nsclientinternal_url_title">Adresa Nightscout</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">Introduceți adresa Nightscout</string>
     <string name="nsclientinternal_secret_title">Cheia API NS</string>
     <string name="nsclientinternal_secret_dialogtitle">Cheia API NS</string>

@@ -359,6 +359,8 @@
     <string name="restart">Restart</string>
     <string name="nsclientinternal_title">NSClient</string>
     <string name="nsclientinternal_url_title">Nightscout URL</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">Enter Your Nightscout URL</string>
     <string name="nsclientinternal_secret_title">NS API secret</string>
     <string name="nsclientinternal_secret_dialogtitle">NS API secret</string>
@@ -369,6 +371,8 @@
     <string name="queue">Queue:</string>
     <string name="status">Status:</string>
     <string name="key_nsclientinternal_url" translatable="false">nsclientinternal_url</string>
+    <string name="key_nsclientinternal_toggle_time" translatable="false">nsclientinternal_toggle_time</string>
+    <string name="key_nsclientinternal_toggle_active_time" translatable="false">nsclientinternal_toggle_active_time</string>
     <string name="key_nsclientinternal_api_secret" translatable="false">nsclientinternal_api_secret</string>
     <string name="clearlog">Clear log</string>
     <string name="key_nsclientinternal_autoscroll" translatable="false">nsclientinternal_autoscroll</string>

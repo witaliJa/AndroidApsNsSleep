@@ -304,6 +304,8 @@
     <string name="restart">Omstart</string>
     <string name="nsclientinternal_title">NSClient</string>
     <string name="nsclientinternal_url_title">Nightscout URL</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">Oppgi din Nightscout URL</string>
     <string name="nsclientinternal_secret_title">Nightscout API-nøkkel</string>
     <string name="nsclientinternal_secret_dialogtitle">Nightscout API-nøkkel</string>

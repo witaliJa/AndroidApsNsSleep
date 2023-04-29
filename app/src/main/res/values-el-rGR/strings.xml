@@ -229,6 +229,8 @@
     <string name="restart">Επανεκκίνηση</string>
     <string name="nsclientinternal_title">NSClient</string>
     <string name="nsclientinternal_url_title">Διεύθυνση Nightscout</string>
+    <string name="nsclientinternal_toggle_time">CUSTOM: Nightscout pause time in sec</string>
+    <string name="nsclientinternal_toggle_active_time">CUSTOM: Nightscout active time in sec</string>
     <string name="nsclientinternal_url_dialogmessage">Βάλτε την διεύθυνσή σας Nightscout</string>
     <string name="nsclientinternal_secret_title">Μυστικός κωδικός NS API secret</string>
     <string name="nsclientinternal_secret_dialogtitle">Mυστικός κωδικός NS API secret</string>
