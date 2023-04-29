@@ -1,3 +1,15 @@
+
+# This Fork
+This Fork handle a battery drain Problem.
+<br/>Nightscout get paused (after 30 seconds) and unpaused (after 120 seconds).
+<br/>This reduce in my case battery usage from 10% per hour to 4% per hour.
+<br/>And now my battery last 25 hours (without this patch only 10 hours).
+<br/><b>U can use this patch, but on your own risk.</b>
+<br/><br/><br/>
+
+
+
+
 # AndroidAPS
 * Check the wiki: https://androidaps.readthedocs.io
 *  Everyone who’s been looping with AndroidAPS needs to fill out the form after 3 days of looping  https://docs.google.com/forms/d/14KcMjlINPMJHVt28MDRupa4sz4DDIooI4SrW0P3HSN8/viewform?c=0&w=1
